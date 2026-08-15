@@ -1,0 +1,466 @@
+#lb1{
+    color: rgb(5, 5, 5);
+    font-family: "Fredoka";
+    font-size: xx-large;
+    font-weight: 900;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.box{
+    display: grid;
+    transition: 100ms ease;
+    scale: 0;
+    opacity: 0;
+    background-color: rgb(253, 210, 157);
+    height: 270px;
+    width: 315px;
+    align-items: center;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 197, 111); ;
+}
+.box.open{
+    transition: 100ms ease;
+    scale: 1;
+    opacity: 1;
+}
+main{
+    display: grid;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    grid-gap: 10px;
+}
+.btn{
+    transition: 0.1s ease;
+    transform: scale(1);
+    height: 75px;
+    width: 300px;
+    border-radius: 25px;
+    font-size: x-large;
+    font-weight: 900;
+}
+.btn:hover{
+    transition: 0.1s ease;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px black;
+}
+.btn:active{
+    transition: 0.1s ease;
+    transform: scale(0.95);
+}
+#mysocial{
+    border: 4px solid rgb(255, 197, 111);
+    background-color: rgb(245, 207, 159);
+    font-family: "fredoka";
+    font-size: x-large;
+    font-weight: 900;
+}
+.socialbtn{  
+    text-align: center;
+    font-family: "fredoka";
+    transition: 0.1s ease;
+    transform: scale(1);
+    height: 75px;
+    width: 300px;
+    border-radius: 25px;
+    font-size: x-large;
+    font-weight: 900;
+}
+.socialbtn:hover{  
+    transition: 0.1s ease;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px black;
+}
+.socialbtn:active{  
+    transition: 0.1s ease;
+    transform: scale(0.95);
+}
+.icon{
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    height: 65;
+    width: 65;
+}
+#discord{
+    color: #ffffff;
+    background-color: rgb(0, 131, 253);
+}
+#beluga{
+    position: fixed;
+    bottom: 0px;
+    left: -100px;  
+}
+#cat{
+    height: 350;
+    width: 500;
+    position: fixed;
+    bottom: 0px;
+    right: 1px;
+}
+.aboutme{
+    position: fixed;
+    top: 62px;
+    display: grid;
+    transition: 100ms ease;
+    scale: 0;
+    opacity: 0;
+    background-color: rgb(253, 210, 157);
+    height: 270px;
+    width: 315px;
+    align-items: center;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 197, 111); ;
+}
+.aboutme.open{
+    transition: 100ms ease;
+    scale: 1;
+    opacity: 1;
+}
+#aboutme{
+    border: 4px solid rgb(255, 197, 111);
+    background-color: rgb(245, 207, 159);
+    font-family: "fredoka";
+    font-size: x-large;
+    font-weight: 900;
+}
+
+/* =========================================================
+   FULL RESPONSIVE
+   ========================================================= */
+
+
+/* =========================================================
+   DEFAULT / DESKTOP
+   1025px+
+   Giữ nguyên layout gốc
+   ========================================================= */
+
+@media (min-width: 1025px) {
+
+    body {
+        zoom: 1;
+    }
+
+    #beluga {
+        zoom: 1;
+    }
+
+    #cat {
+        zoom: 1;
+    }
+
+    .box {
+        zoom: 1;
+        height: 270px;
+    }
+
+    .aboutme {
+        zoom: 1;
+        height: 270px;
+    }
+
+    .btn {
+        zoom: 1;
+    }
+
+    .socialbtn {
+        zoom: 1;
+    }
+}
+
+
+/* =========================================================
+   LAPTOP
+   769px - 1024px
+   ========================================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    body {
+        zoom: 0.95;
+    }
+
+    /* Mèo nhỏ lại nhưng vẫn ở nguyên góc */
+    #beluga {
+        zoom: 0.65;
+    }
+
+    #cat {
+        zoom: 0.65;
+    }
+
+    /* Popup nhỏ lại */
+    .box {
+        zoom: 0.85;
+        height: 290px;
+    }
+
+    .aboutme {
+        zoom: 0.85;
+        height: 270px;
+    }
+
+    .btn {
+        zoom: 0.95;
+    }
+
+    .socialbtn {
+        zoom: 1;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   601px - 768px
+   ========================================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    body {
+        zoom: 0.95;
+    }
+
+    /* BELUGA */
+    #beluga {
+        zoom: 0.55;
+    }
+
+    /* CAT */
+    #cat {
+        zoom: 0.55;
+    }
+
+    /* BOX */
+    .box {
+        zoom: 0.75;
+        height: 290px;
+    }
+
+    /* ABOUT ME */
+    .aboutme {
+        zoom: 0.75;
+        height: 270px;
+    }
+
+    .btn {
+        zoom: 0.90;
+    }
+
+    .socialbtn {
+        zoom: 1;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   481px - 600px
+   ========================================================= */
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+    body {
+        zoom: 1;
+    }
+
+    /* Hai con mèo thu nhỏ nhiều */
+    #beluga {
+        zoom: 0.45;
+    }
+
+    #cat {
+        zoom: 0.45;
+    }
+
+    /* BOX nhỏ hơn + cao hơn */
+    .box {
+        zoom: 0.60;
+        height: 300px;
+    }
+
+    /* ABOUT ME */
+    .aboutme {
+        zoom: 0.60;
+        height: 270px;
+    }
+
+    /* Hai button chính */
+    .btn {
+        zoom: 0.90;
+    }
+
+    .socialbtn {
+        zoom: 1;
+    }
+}
+
+
+/* =========================================================
+   MOBILE NHỎ
+   381px - 480px
+   ========================================================= */
+
+@media (min-width: 381px) and (max-width: 480px) {
+
+    body {
+        zoom: 1;
+    }
+
+    /* BELUGA */
+    #beluga {
+        zoom: 0.40;
+    }
+
+    /* CAT */
+    #cat {
+        zoom: 0.40;
+    }
+
+    /* BOX */
+    .box {
+        zoom: 0.55;
+        height: 300px;
+    }
+
+    /* ABOUT ME */
+    .aboutme {
+        zoom: 0.55;
+        height: 270px;
+    }
+
+    /* MAIN BUTTON */
+    .btn {
+        zoom: 0.85;
+    }
+
+    .socialbtn {
+        zoom: 1;
+    }
+}
+
+
+/* =========================================================
+   MOBILE RẤT NHỎ
+   321px - 380px
+   ========================================================= */
+
+@media (min-width: 321px) and (max-width: 380px) {
+
+    body {
+        zoom: 1;
+    }
+
+    /* BELUGA */
+    #beluga {
+        zoom: 0.35;
+    }
+
+    /* CAT */
+    #cat {
+        zoom: 0.35;
+    }
+
+    /* BOX */
+    .box {
+        zoom: 0.50;
+        height: 300px;
+    }
+
+    /* ABOUT ME */
+    .aboutme {
+        zoom: 0.50;
+        height: 270px;
+    }
+
+    /* MAIN BUTTON */
+    .btn {
+        zoom: 0.80;
+    }
+
+    .socialbtn {
+        zoom: 1;
+    }
+}
+
+
+/* =========================================================
+   320px TRỞ XUỐNG
+   ========================================================= */
+
+@media (max-width: 320px) {
+
+    body {
+        zoom: 1;
+    }
+
+    /* BELUGA */
+    #beluga {
+        zoom: 0.30;
+    }
+
+    /* CAT */
+    #cat {
+        zoom: 0.30;
+    }
+
+    /* BOX */
+    .box {
+        zoom: 0.45;
+        height: 300px;
+    }
+
+    /* ABOUT ME */
+    .aboutme {
+        zoom: 0.45;
+        height: 270px;
+    }
+
+    /* MAIN BUTTON */
+    .btn {
+        zoom: 0.75;
+    }
+
+    .socialbtn {
+        zoom: 1;
+    }
+}
+
+
+/* =========================================================
+   MÀN HÌNH SIÊU RỘNG
+   1920px+
+   Không phóng to thêm
+   ========================================================= */
+
+@media (min-width: 1920px) {
+
+    body {
+        zoom: 1;
+    }
+
+    #beluga {
+        zoom: 1;
+    }
+
+    #cat {
+        zoom: 1;
+    }
+
+    .box {
+        zoom: 1;
+        height: 270px;
+    }
+
+    .aboutme {
+        zoom: 1;
+        height: 270px;
+    }
+}
