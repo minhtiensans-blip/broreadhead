@@ -37,6 +37,7 @@ main{
     grid-gap: 10px;
 }
 .btn{
+    cursor: pointer;
     transition: 0.1s ease;
     transform: scale(1);
     height: 75px;
